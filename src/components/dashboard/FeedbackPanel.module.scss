@@ -1,0 +1,78 @@
+.card {
+  border-radius: var(--radius-lg);
+  padding: 12px 14px 10px;
+  background: radial-gradient(circle at top left, #1e174b 0, #060619 45%, #050413 85%);
+  border: 1px solid rgba(152, 116, 255, 0.85);
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: var(--color-text-soft);
+}
+
+.score {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.scoreMeta {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.item {
+  padding-top: 4px;
+  border-top: 1px dashed rgba(92, 104, 186, 0.8);
+  font-size: 11px;
+}
+
+.clientRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.client {
+  font-weight: 500;
+}
+
+.jobId {
+  font-size: 10px;
+  color: var(--color-text-soft);
+}
+
+.scorePill {
+  padding: 2px 7px;
+  border-radius: 999px;
+  border: 1px solid rgba(71, 230, 177, 0.9);
+  color: var(--color-success);
+  font-size: 10px;
+}
+
+.comment {
+  color: var(--color-text-muted);
+}

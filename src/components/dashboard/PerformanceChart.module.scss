@@ -1,0 +1,70 @@
+.card {
+  border-radius: var(--radius-lg);
+  padding: 12px 14px 8px;
+  background: radial-gradient(circle at top left, #171d4f 0, #070819 35%, #050616 80%);
+  border: 1px solid rgba(125, 144, 255, 0.7);
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: var(--color-text-soft);
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.legendSwatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+.legendRevenue {
+  background: linear-gradient(135deg, #47e6b1, #9b5bff);
+}
+
+.legendJobs {
+  background: rgba(111, 124, 255, 0.9);
+}
+
+.legendEmergency {
+  background: rgba(255, 85, 115, 0.9);
+}
+
+.chartWrapper {
+  width: 100%;
+  height: 260px;
+}
+
+@media (max-width: 960px) {
+  .chartWrapper {
+    height: 220px;
+  }
+}
+
