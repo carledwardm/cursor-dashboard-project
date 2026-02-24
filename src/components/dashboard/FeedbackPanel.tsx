@@ -1,9 +1,12 @@
 import { customerFeedback } from "@/data/dashboardData";
+import type { FeedbackOutcome } from "@/data/dashboardData";
 import styles from "./FeedbackPanel.module.scss";
 
 export function FeedbackPanel() {
-  const avgScore =
-    customerFeedback.reduce((sum, f) => sum + f.score, 0) / customerFeedback.length;
+  const total = customerFeedback.length;
+  const confirmed = customerFeedback.filter(
+    (f) => f.outcome === "Confirmed Complete",
+  ).length;
 
   return (
     <section
@@ -14,11 +17,13 @@ export function FeedbackPanel() {
       <div className={styles.headerRow}>
         <div>
           <div className={styles.title}>Client feedback</div>
-          <div className={styles.subtitle}>Post-job sentiment and commentary</div>
+          <div className={styles.subtitle}>Post-job outcomes from client portals</div>
         </div>
-        <div>
-          <div className={styles.score}>{avgScore.toFixed(1)} ★</div>
-          <div className={styles.scoreMeta}>Rolling 7-day average</div>
+        <div className={styles.summary}>
+          <div className={styles.summaryPrimary}>
+            {confirmed}/{total} confirmed complete
+          </div>
+          <div className={styles.summaryMeta}>Remaining jobs need review or follow-up</div>
         </div>
       </div>
 
@@ -30,7 +35,11 @@ export function FeedbackPanel() {
                 <div className={styles.client}>{feedback.client}</div>
                 <div className={styles.jobId}>{feedback.jobId}</div>
               </div>
-              <span className={styles.scorePill}>{feedback.score.toFixed(1)} ★</span>
+              <span
+                className={`${styles.outcomePill} ${outcomeClass(feedback.outcome)}`}
+              >
+                {feedback.outcome}
+              </span>
             </div>
             <p className={styles.comment}>{feedback.comment}</p>
           </article>
@@ -38,5 +47,11 @@ export function FeedbackPanel() {
       </div>
     </section>
   );
+}
+
+function outcomeClass(outcome: FeedbackOutcome) {
+  if (outcome === "Confirmed Complete") return styles.outcomePositive;
+  if (outcome === "Unsatisfactory with Feedback") return styles.outcomeNegative;
+  return styles.outcomeFollowup;
 }
 

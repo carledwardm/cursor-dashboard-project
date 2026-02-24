@@ -118,23 +118,38 @@ export const jobs: Job[] = [
   },
 ];
 
-export const customerFeedback = [
+export type FeedbackOutcome =
+  | "Confirmed Complete"
+  | "Unsatisfactory with Feedback"
+  | "Follow-up Scheduled";
+
+export interface CustomerFeedback {
+  client: string;
+  comment: string;
+  outcome: FeedbackOutcome;
+  jobId: string;
+}
+
+export const customerFeedback: CustomerFeedback[] = [
   {
     client: "Skyline Healthcare",
-    comment: "Technician arrived ahead of schedule and coordinated with our nursing staff with zero disruption.",
-    score: 4.9,
+    comment:
+      "Work validated with nursing leadership. Environmental comfort restored on all affected wards.",
+    outcome: "Confirmed Complete",
     jobId: "FM-1038",
   },
   {
     client: "City Data Center",
-    comment: "Excellent communication on risk and rollback plan. Would like the same team on our next shutdown.",
-    score: 4.8,
+    comment:
+      "Shutdown, replacement and start-up all confirmed by facilities and IT. No alarms raised in post-change window.",
+    outcome: "Confirmed Complete",
     jobId: "FM-1021",
   },
   {
     client: "Metro Offices",
-    comment: "Resolution was good but took longer than expected due to parts availability.",
-    score: 4.2,
+    comment:
+      "Comfort restored but delays due to parts availability triggered staff complaints. Requesting tighter ETA updates.",
+    outcome: "Unsatisfactory with Feedback",
     jobId: "FM-0994",
   },
 ];

@@ -1,6 +1,6 @@
 .card {
   border-radius: var(--radius-lg);
-  padding: 12px 14px 10px;
+  padding: 14px 16px 12px;
   background: radial-gradient(circle at top left, #171a4b 0, #050618 40%, #040413 85%);
   border: 1px solid rgba(106, 125, 220, 0.7);
   box-shadow: var(--shadow-subtle);
@@ -13,28 +13,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .title {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
 }
 
 .subtitle {
-  font-size: 11px;
+  font-size: 13px;
   color: var(--color-text-soft);
 }
 
 .filters {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 11px;
+  gap: 8px;
+  font-size: 13px;
 }
 
 .filterChip {
-  padding: 4px 8px;
+  padding: 5px 10px;
   border-radius: 999px;
   border: 1px solid rgba(118, 136, 215, 0.75);
   background: rgba(7, 11, 40, 0.96);
@@ -46,20 +46,20 @@
 }
 
 .tableWrapper {
-  margin-top: 4px;
-  max-height: 240px;
+  margin-top: 6px;
+  max-height: 260px;
   overflow: auto;
 }
 
 .table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .th {
   text-align: left;
-  padding: 6px 4px;
+  padding: 8px 6px;
   color: var(--color-text-soft);
   font-weight: 500;
   border-bottom: 1px solid rgba(58, 71, 151, 0.9);
@@ -70,7 +70,7 @@
 }
 
 .td {
-  padding: 6px 4px;
+  padding: 8px 6px;
   border-bottom: 1px solid rgba(27, 32, 80, 0.9);
 }
 
@@ -92,9 +92,9 @@
 }
 
 .priorityPill {
-  padding: 3px 8px;
+  padding: 4px 9px;
   border-radius: 999px;
-  font-size: 10px;
+  font-size: 12px;
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -125,9 +125,9 @@
 }
 
 .statusPill {
-  padding: 2px 7px;
+  padding: 3px 8px;
   border-radius: 999px;
-  font-size: 10px;
+  font-size: 12px;
   border: 1px solid rgba(119, 135, 214, 0.7);
 }
 
@@ -152,7 +152,7 @@
 }
 
 .slaBadge {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--color-danger);
 }
 
@@ -161,7 +161,7 @@
 }
 
 .feedback {
-  font-size: 10px;
+  font-size: 12px;
   color: var(--color-text-muted);
 }
 

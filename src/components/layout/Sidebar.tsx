@@ -3,10 +3,14 @@ import styles from "./Sidebar.module.scss";
 const navItems = [
   { label: "Overview", icon: "◎", meta: "Today", active: true, href: "#overview" },
   { label: "Jobs", icon: "⧉", meta: "32 open", active: false, href: "#jobs" },
+  { label: "Unassigned Queue", icon: "☰", meta: "9 waiting", active: false, href: "#unassigned" },
   { label: "Dispatch Board", icon: "⚑", meta: "7 SLA risk", active: false, href: "#dispatch" },
   { label: "Assets", icon: "▦", meta: "184 sites", active: false, href: "#assets" },
+  { label: "Vendors", icon: "⚙", meta: "42 technicians", active: false, href: "#vendors" },
+  { label: "External Portals", icon: "⇱", meta: "Client access", active: false, href: "#portals" },
   { label: "Clients", icon: "✦", meta: "26 key", active: false, href: "#clients" },
-  { label: "Feedback", icon: "☻", meta: "4.7 / 5", active: false, href: "#feedback" },
+  { label: "Feedback", icon: "☻", meta: "Outcomes", active: false, href: "#feedback" },
+  { label: "Settings", icon: "☼", meta: "Workspace", active: false, href: "#settings" },
 ];
 
 export function Sidebar() {
