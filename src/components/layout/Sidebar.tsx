@@ -81,9 +81,9 @@ export function Sidebar() {
         </div>
 
         <div className={styles.profileRow}>
-          <div className={styles.profileAvatar}>AO</div>
+          <div className={styles.profileAvatar}>JS</div>
           <div className={styles.profileMeta}>
-            <div className={styles.profileName}>Carl Millard</div>
+            <div className={styles.profileName}>John Smith</div>
             <div className={styles.profileRole}>Operations Director</div>
             <div className={styles.profileStatus}>Online · Command Center</div>
           </div>

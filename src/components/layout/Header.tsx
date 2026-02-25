@@ -48,9 +48,9 @@ export function Header() {
           </button>
 
           <div className={styles.user} aria-label="Account">
-            <div className={styles.userAvatar}>AO</div>
+            <div className={styles.userAvatar}>JS</div>
             <div className={styles.userMeta}>
-              <span className={styles.userName}>Carl Millard</span>
+              <span className={styles.userName}>John Smith</span>
               <span className={styles.userRole}>Ops Director</span>
             </div>
             <span className={styles.userCaret}>▾</span>
