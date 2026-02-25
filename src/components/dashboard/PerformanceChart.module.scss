@@ -1,8 +1,8 @@
 .card {
   border-radius: var(--radius-lg);
   padding: 12px 14px 8px;
-  background: radial-gradient(circle at top left, #171d4f 0, #070819 35%, #050616 80%);
-  border: 1px solid rgba(125, 144, 255, 0.7);
+  background: radial-gradient(circle at top left, #222b78 0, #111633 40%, #0a0e27 95%);
+  border: none;
   box-shadow: var(--shadow-subtle);
   display: flex;
   flex-direction: column;
@@ -24,6 +24,7 @@
 .subtitle {
   font-size: 11px;
   color: var(--color-text-soft);
+  font-weight: 500;
 }
 
 .legend {
@@ -31,6 +32,7 @@
   align-items: center;
   gap: 10px;
   font-size: 11px;
+  font-weight: 500;
 }
 
 .legendItem {

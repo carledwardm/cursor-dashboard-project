@@ -21,8 +21,8 @@
 .card {
   border-radius: var(--radius-lg);
   padding: 14px 16px;
-  background: radial-gradient(circle at top left, #181d54 0, #080918 38%, #060718 80%);
-  border: 1px solid rgba(111, 124, 255, 0.5);
+  background: radial-gradient(circle at top left, #24307a 0, #121736 40%, #0a0e27 95%);
+  border: none;
   box-shadow: var(--shadow-subtle);
   display: flex;
   flex-direction: column;
@@ -38,6 +38,7 @@
   align-items: center;
   font-size: 13px;
   color: var(--color-text-soft);
+  font-weight: 500;
 }
 
 .pill {
@@ -62,11 +63,13 @@
 .unit {
   font-size: 14px;
   color: var(--color-text-muted);
+  font-weight: 500;
 }
 
 .trend {
   font-size: 13px;
   color: var(--color-success);
+  font-weight: 500;
 }
 
 .trendDown {
@@ -78,7 +81,7 @@
   width: 100%;
   height: 24px;
   border-radius: 999px;
-  background: radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.12), rgba(5, 9, 32, 0.9));
+  background: radial-gradient(circle at 0 0, rgba(255, 255, 255, 0.16), rgba(8, 14, 52, 0.95));
   overflow: hidden;
   position: relative;
 }
