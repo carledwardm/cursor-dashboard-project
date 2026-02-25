@@ -48,6 +48,21 @@ export function Sidebar() {
         </ul>
       </nav>
 
+      <nav className={styles.mobileNav}>
+        <ul className={styles.mobileNavList}>
+          {navItems.map((item) => (
+            <li key={item.label}>
+              <a
+                href={item.href}
+                className={`${styles.navItem} ${item.active ? styles.navItemActive : ""}`}
+              >
+                <span className={styles.navItemPrimary}>{item.label}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
       <div className={styles.bottom}>
         <div className={styles.utilizationCard}>
           <div className={styles.utilizationHeader}>
