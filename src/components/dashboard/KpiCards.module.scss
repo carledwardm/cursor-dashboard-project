@@ -1,11 +1,11 @@
 .grid {
   display: grid;
-  grid-template-columns: 350px;
-  gap: 25px;
+  grid-template-columns: minmax(325px, 375px);
+  gap: 15px;
   margin-bottom: 18px;
 
-  @media screen and (min-width: 1100px) {
-    grid-template-columns: repeat(2, 375px)
+  @media screen and (min-width: 1000px) {
+    grid-template-columns: repeat(2, minmax(300px,375px))
   }
 
   @media screen and (min-width: 1500px) {
