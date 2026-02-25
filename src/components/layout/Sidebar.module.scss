@@ -1,5 +1,5 @@
 .sidebar {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -191,9 +191,13 @@
   padding: 12px 12px 12px 14px;
   background: linear-gradient(135deg, rgba(50, 83, 190, 0.97), rgba(142, 98, 228, 0.98));
   box-shadow: var(--shadow-subtle);
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 6px;
+
+  @media screen and (min-width: 961px) {
+    display: flex;
+  }
 }
 
 .utilizationHeader {
