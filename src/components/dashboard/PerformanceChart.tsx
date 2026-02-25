@@ -21,7 +21,7 @@ type PayloadItem = {
   color: string;
 };
 
-function CustomTooltip({ active, payload, label }: TooltipProps<ValueType, NameType>) {
+function CustomTooltip({ active, payload, label }: TooltipProps<ValueType, NameType> & { payload?: any[]; label?: string; }) {
   if (!active || !payload || !payload.length) return null;
 
   const revenue = payload.find((p) => p.dataKey === "revenue");
