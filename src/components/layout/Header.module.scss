@@ -72,6 +72,11 @@
   background: radial-gradient(circle at top left, #202b72 0, #101634 45%, #060818 100%);
   color: var(--color-text-primary);
   font-size: 14px;
+  transition: border 0.2s ease-in-out;
+
+  &:hover {
+    border: 1px solid white;
+  }
 }
 
 .searchInput::placeholder {
