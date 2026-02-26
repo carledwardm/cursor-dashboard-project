@@ -110,6 +110,11 @@
   border-color: rgba(155, 91, 255, 0.9);
   background: linear-gradient(135deg, rgba(178, 117, 255, 0.98), rgba(126, 149, 255, 0.98));
   color: #fdfbff;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .chipPill {
