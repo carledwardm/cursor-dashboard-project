@@ -72,6 +72,11 @@
   background: radial-gradient(circle at top left, #202b72 0, #101634 45%, #060818 100%);
   color: var(--color-text-primary);
   font-size: 14px;
+  transition: border 0.2s ease-in-out;
+
+  &:hover {
+    border: 1px solid white;
+  }
 }
 
 .searchInput::placeholder {
@@ -110,10 +115,25 @@
   border-color: rgba(155, 91, 255, 0.9);
   background: linear-gradient(135deg, rgba(178, 117, 255, 0.98), rgba(126, 149, 255, 0.98));
   color: #fdfbff;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .chipPill {
   border-radius: var(--radius-pill);
+  color: #e0d8e7;
+  background-color: radial-gradient(circle at top left, rgba(60, 88, 190, 0.96), rgba(24, 34, 90, 0.98));
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+    
+  }
 }
 
 .chipDot {
@@ -142,6 +162,11 @@
   cursor: pointer;
   color: var(--color-text-primary);
   position: relative;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .iconButtonSubtle {
@@ -173,6 +198,12 @@
   border-radius: 999px;
   border: 1px solid rgba(117, 134, 216, 0.8);
   background: radial-gradient(circle at top left, rgba(36, 49, 120, 0.98), rgba(10, 13, 40, 0.98));
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .userAvatar {
