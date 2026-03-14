@@ -1,4 +1,5 @@
 import styles from "./Header.module.scss";
+import { FaRegBell, FaRegEnvelope } from "react-icons/fa";
 
 export function Header() {
   return (
@@ -25,17 +26,16 @@ export function Header() {
           />
           <span className={styles.searchIcon}>⌕</span>
         </div>
-        
         <div className={styles.iconButtons}>
           <button className={styles.iconButton} aria-label="Messages">
-            ✉
+            <FaRegEnvelope />
             <span className={styles.iconBadge}>3</span>
           </button>
           <button className={styles.iconButton} aria-label="Notifications">
-            🔔
+            <FaRegBell />
             <span className={styles.iconBadge}>9</span>
           </button>
-          <button className={`${styles.iconButton} ${styles.iconButtonSubtle}`} aria-label="Command palette">
+          <button className={styles.iconButton} aria-label="Command palette">
             ⌘K
           </button>
         </div>
