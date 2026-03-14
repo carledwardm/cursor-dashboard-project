@@ -13,6 +13,7 @@
   gap: 18px;
   backdrop-filter: blur(26px);
   z-index: 20;
+  overflow-y: scroll;
 }
 
 .brandRow {
@@ -72,18 +73,6 @@
   font-size: 13px;
   color: var(--color-text-soft);
   font-weight: 500;
-}
-
-.badge {
-  padding: 5px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(186, 199, 255, 0.4);
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--color-text-muted);
-  background: linear-gradient(135deg, rgba(42, 58, 140, 0.95), rgba(85, 90, 180, 0.98));
 }
 
 .nav {

@@ -26,8 +26,6 @@ export function Sidebar() {
             <div className={styles.brandTextSecondary}>Facility Maintenance Cloud</div>
           </div>
         </div>
-
-        <div className={styles.badge}>Demo Dashboard</div>
       </div>
 
       <nav className={styles.nav}>
